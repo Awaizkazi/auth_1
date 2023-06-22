@@ -21,9 +21,23 @@ class LoginPage extends StatelessWidget {
 
               // Welcome back you'\ve been missed!
               SizedBox(height: 25),
+              Text(
+                'Welcome back you\'ve been missed!',
+                style: TextStyle(
+                  color: Colors.grey[700],
+                  fontSize: 16,
+                ),
+              ),
 
               // Username textField
               SizedBox(height: 25),
+              TextField(
+                decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
+                ),
+              ),
 
               // Password textField
               SizedBox(height: 25),
