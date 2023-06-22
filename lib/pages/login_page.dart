@@ -7,26 +7,33 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      body: Column(
-        children: [
-          // Logo
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
+              // Logo
+              Icon(
+                Icons.lock,
+                size: 100,
+              ),
+              // Welcome back you'\ve been missed!
 
-          // Welcome back you'\ve been missed!
+              // Username textField
 
-          // Username textField
+              // Password textField
 
-          // Password textField
+              // Forgot password
 
-          // Forgot password
+              // sign In button
 
-          // sign In button
+              //  or Continue with text
 
-          //  or Continue with text
+              // google + apple sign In button
 
-          // google + apple sign In button
-
-          // not a member ? Register now 
-        ],
+              // not a member ? Register now
+            ],
+          ),
+        ),
       ),
     );
   }
