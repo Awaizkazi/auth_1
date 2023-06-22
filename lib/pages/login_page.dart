@@ -32,7 +32,6 @@ class LoginPage extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-
               // Username textField
               SizedBox(height: 25),
               MyTextField(
@@ -50,6 +49,20 @@ class LoginPage extends StatelessWidget {
 
               // Forgot password
               SizedBox(height: 25),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      'Forgot Password',
+                      style: TextStyle(
+                        color: Colors.grey[600],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
 
               // sign In button
               SizedBox(height: 25),
