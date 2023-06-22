@@ -5,7 +5,7 @@ class LoginPage extends StatelessWidget {
   // text Editing Contollers
   final userNameController = TextEditingController();
   final passwordController = TextEditingController();
-   LoginPage({super.key});
+  LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +35,18 @@ class LoginPage extends StatelessWidget {
 
               // Username textField
               SizedBox(height: 25),
-              MyTextField(hintText: 'Username',controller: ,),
+              MyTextField(
+                hintText: 'Username',
+                controller: userNameController,
+                obsecureText: false,
+              ),
               // Password textField
               SizedBox(height: 25),
-              MyTextField(),
+              MyTextField(
+                hintText: 'Password',
+                controller: userNameController,
+                obsecureText: true,
+              ),
 
               // Forgot password
               SizedBox(height: 25),
